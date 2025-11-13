@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/9885839914.js" crossorigin="anonymous"></script>
+  <title>Timeless Visions - Virtual Art Gallery</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+        <header>
+            <h1>Timeless Visions</h1>
+            <p>Walk through eras of art — virtually</p>
+        </header>
+
+        <div class="scene">
+            <div class="gallery-container">
+            <section class="gallery-room" id="room1">
+                <div>
+                    <h2>Classical Era</h2>
+                    <a href="#artControls"><i class="fa-solid fa-circle-plus"></i></a>
+                    <div class="artworks">
+                        <div class="frame" data-title="The Birth of Venus" data-artist="Sandro Botticelli">
+                            <img src="assets/artworks/classical1.jpg" alt="Art" />
+                        </div>
+                        <div class="frame" data-title="Mona Lisa" data-artist="Leonardo da Vinci">
+                            <img src="assets/artworks/classical2.jpg" alt="Art" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery-room" id="room2">
+                <div>
+                    <h2>Modern Era</h2>
+                    <a href="#artControls"><i class="fa-solid fa-circle-plus"></i></a>
+                    <div class="artworks">
+                        <div class="frame" data-title="The Persistence of Memory" data-artist="Salvador Dalí">
+                            <img src="assets/artworks/modern1.jpg" alt="Art" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery-room" id="room3">
+                <div>
+                    <h2>Digital Era</h2>
+                    <a href="#artControls"><i class="fa-solid fa-circle-plus"></i></a>
+                    <div class="artworks">
+                        <div class="frame" data-title="Neon City" data-artist="CyberVision">
+                            <img src="assets/artworks/digital1.jpg" alt="Art" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <nav>
+                <button id="backwardBtn">⬅️ Back</button>
+                <button id="forwardBtn">Forward ➡️</button>
+            </nav>
+            </div>
+        </div>
+
+        <button id="musicBtn" style="position: fixed; top: 20px; right: 20px; z-index: 10;">🔈</button>
+        <audio id="bgMusic" src="assets/bg-music.mp3" loop></audio>
+  </div>
+
+  <section id="artControls" >
+        <form id="addArtForm">
+            <h3>Add New Artwork</h3>
+            <div>
+                <label>❗Category:</label>
+                <select id="artCategory">
+                    <option value="room1">Classical</option>
+                    <option value="room2">Modern</option>
+                    <option value="room3">Digital</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Title:</label>
+                <input type="text" id="artTitleInput" placeholder="Artwork title" required>
+            </div>
+
+            <div>
+                <label>Artist:</label>
+                <input type="text" id="artArtistInput" placeholder="Artist name" required>
+            </div>
+
+            <div>
+                <label>Upload Image:</label>
+                <input type="file" id="artImageInput" accept="image/*" required>
+            </div>
+
+            <button type="submit">Add Artwork</button>
+        </form>
+    </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
