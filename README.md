@@ -62,12 +62,12 @@
 
 **🖥️ Frontend**
 
-    **.** HTML5 – semantic and accessible structure for gallery layout.
+      HTML5 – semantic and accessible structure for gallery layout.
 
-    **.** CSS3 – animations, responsive grid design, and visual depth effects.
+      CSS3 – animations, responsive grid design, and visual depth effects.
 
-    **.** JavaScript (ES6) – dynamic DOM manipulation, event handling, localStorage, and image processing.
+      JavaScript (ES6) – dynamic DOM manipulation, event handling, localStorage, and image processing.
 
-    **.** Canvas API – used internally to resize uploaded images to optimal frame fit.
+      Canvas API – used internally to resize uploaded images to optimal frame fit.
 
-    **.** Font Awesome – for intuitive icon add control.
+      Font Awesome – for intuitive icon add control.
